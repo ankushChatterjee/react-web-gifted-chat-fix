@@ -14,12 +14,8 @@
     "message",
     "chat"
   ],
-  "author": "Jan Romaniak",
+  "author": "Ankush",
   "license": "MIT",
-  "scripts": {
-    "lint": "eslint . --ext .js,.jsx",
-    "compile": "export BABEL_ENV='production' && rm -rf ./dist && mkdir dist && babel index.js src/* -d dist --ignore **/__tests__ && cp package.json dist/ && cp README.md dist/"
-  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.6",
