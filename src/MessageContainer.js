@@ -148,7 +148,7 @@ var MessageContainer = function (_React$Component) {
       return React.createElement(
         View,
         { style: { flex: 1 }, onLayout: function onLayout() {
-            _this2._scrollView.scrollTo();
+            _this2._scrollView.scrollTo({y:window.innerHeight,animated:true});
           } },
         React.createElement(ListView, Object.assign({
           enableEmptySections: true,
@@ -163,7 +163,7 @@ var MessageContainer = function (_React$Component) {
           }
         }, this.props.listViewProps, {
           onContentSizeChange: function onContentSizeChange() {
-            return _this2._scrollView.scrollTo();
+            return _this2._scrollView.scrollTo({y:window.innerHeight,animated:true});
           },
           dataSource: this.state.dataSource,
           renderScrollComponent: this.renderScrollComponent,
